@@ -1,0 +1,10 @@
+<ion-view view-title="{{moveData}}">
+  <ion-content on-scroll="getScrollPosition()" delegate-handle="ScrollToTop" >
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+    <div  class="scrollToTop" ng-click="scrollTop()"></div>
+</ion-view>
